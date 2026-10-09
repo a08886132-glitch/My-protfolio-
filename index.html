@@ -1,0 +1,740 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Alaa Ahmed | Front-End Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+    <style>
+
+.hero-card {
+  position: relative !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: transparent !important;
+}
+
+/* decorative circle */
+.hero-card::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 230px !important;
+  height: 230px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+  animation: circleAppear 1.8s ease-out both !important;
+}
+
+/* photo */
+.hero-card .alaa-photo {
+  position: relative !important;
+  z-index: 2 !important;
+
+  width: 165px !important;
+  height: 210px !important;
+
+  padding: 7px !important;
+
+  background: white !important;
+
+  border-radius: 28px !important;
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.16),
+    0 8px 20px rgba(0,0,0,0.08) !important;
+
+  animation: photoEnter 1.4s cubic-bezier(.16,1,.3,1) both !important;
+}
+
+/* image */
+.hero-card .alaa-photo img {
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block !important;
+
+  object-fit: cover !important;
+
+  border-radius: 22px !important;
+}
+
+
+/* PHOTO ANIMATION */
+
+@keyframes photoEnter {
+
+  0% {
+    opacity: 0 !important;
+    transform: translateY(-180px) scale(0.75) rotate(-8deg) !important;
+  }
+
+  55% {
+    opacity: 1 !important;
+    transform: translateY(15px) scale(1.05) rotate(2deg) !important;
+  }
+
+  75% {
+    transform: translateY(-7px) scale(0.98) rotate(-1deg) !important;
+  }
+
+  100% {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) rotate(0) !important;
+  }
+
+}
+
+
+/* CIRCLE ANIMATION */
+
+@keyframes circleAppear {
+
+  0% {
+    opacity: 0 !important;
+    transform: scale(0.4) rotate(-45deg) !important;
+  }
+
+  100% {
+    opacity: 1 !important;
+    transform: scale(1) rotate(0) !important;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar container">
+
+      <a href="#" class="logo">Alaa<span>.</span></a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+<ul class="nav-links" id="navLinks">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#education">Education</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+      
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container hero-content">
+
+        <!-- TEXT -->
+        <div class="hero-text">
+
+          <p class="small-title">HELLO, I'M</p>
+
+          <h1>
+            Alaa Ahmed
+          </h1>
+
+          <h2>
+            Front-End Developer
+          </h2>
+
+          <p class="hero-description">
+            I build clean, responsive and user-friendly websites
+            using modern front-end technologies.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary-btn">
+              View My Work
+            </a>
+
+            <a href="#contact" class="btn secondary-btn">
+              Contact Me
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- PROFILE IMAGE -->
+       <div class="hero-card">
+
+  <div class=" alaa-photo">
+
+    <img
+      src="images/alaa.jpg"
+      alt="Alaa Ahmed"
+    />
+
+  </div>
+
+</div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>ABOUT ME</p>
+          <h2>Who I Am</h2>
+        </div>
+
+        <div class="about-content">
+
+          <div class="about-text">
+
+            <p>
+              I'm Alaa Ahmed, an Information Systems student and
+              Front-End Developer interested in creating modern,
+              responsive and easy-to-use websites.
+            </p>
+
+            <p>
+              I enjoy turning ideas and designs into functional
+              web interfaces while continuously improving my
+              JavaScript and React skills.
+            </p>
+
+            <a href="#contact" class="text-link">
+              Let's work together →
+            </a>
+
+          </div>
+
+
+          <div class="about-box">
+
+            <div>
+              <span>01</span>
+              <p>Clean UI</p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <p>Responsive Design</p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <p>Modern Development</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- EXPERIENCE -->
+<section class="section" id="experience">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <p>MY EXPERIENCE</p>
+      <h2>Learning & Experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <span class="timeline-date">2026</span>
+
+        <div class="timeline-content">
+          <h3>Front-End Development</h3>
+
+          <p class="timeline-place">
+            Self-Learning & Practical Projects
+          </p>
+
+          <p>
+            Developing practical skills in HTML, CSS, JavaScript
+            and React through courses, exercises and personal projects.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <span class="timeline-date">2026</span>
+
+        <div class="timeline-content">
+          <h3>DEPI Training</h3>
+
+          <p class="timeline-place">
+            Digital Egypt Pioneers Initiative
+          </p>
+
+          <p>
+            Building practical knowledge in web development and
+            freelancing through training sessions and assignments.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- EDUCATION -->
+<section class="section light-section" id="education">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <p>EDUCATION</p>
+      <h2>My Education</h2>
+    </div>
+
+    <div class="education-card">
+
+      <div class="education-year">
+        2025 - Present
+      </div>
+
+      <div class="education-info">
+        <h3>Faculty of Computersciences & Information Ain shams university </h3>
+
+        <p>
+          Information Systems
+        </p>
+
+        <p>
+          Studying computer science and information systems with
+          a focus on programming, web development and software fundamentals.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- SKILLS -->
+    <section class="section light-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>MY SKILLS</p>
+          <h2>Technologies I Use</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">HTML</div>
+            <h3>HTML5</h3>
+            <p>Semantic and structured web pages.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">CSS</div>
+            <h3>CSS3</h3>
+            <p>Responsive layouts and modern UI.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">JS</div>
+            <h3>JavaScript</h3>
+            <p>Interactive and dynamic web experiences.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">R</div>
+            <h3>React</h3>
+            <p>Reusable components and modern interfaces.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">Git</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control and project management.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">UI</div>
+            <h3>Responsive UI</h3>
+            <p>Websites that work across different screens.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>MY WORK</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+          <!-- PROJECT 1 -->
+          <article class="project-card">
+
+            <div class="project-image project-one">
+              <span>01</span>
+            </div>
+            <div class="project-image">
+    <img
+  src="https://images.pexels.com/photos/5632391/pexels-photo-5632391.jpeg"
+  alt="Skills Manager Preview"
+  style="width:100%; max-width:700px; display:block; margin:20px auto; border-radius:14px;"
+>
+</div>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                WEB APPLICATION
+              </p>
+
+              <h3>E-Commerce Website</h3>
+
+              <p>
+                A responsive e-commerce interface with product
+                cards, filtering and shopping cart functionality.
+              </p>
+
+              <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                 
+
+                <a href="https://github.com/a08886132-glitch/E-commerce--website-" target="_blank">
+                  GitHub ↗
+                </a>
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 2 -->
+          <article class="project-card">
+
+            <div class="project-image project-two">
+              <span>02</span>
+            </div>
+            <img
+  src=" https://media.istockphoto.com/id/842811508/photo/website-landing-page-development-sketch-on-math-book.jpg?b=1&s=612x612&w=0&k=20&c=iVLCiqp4WRixeyE8bkfBeTQTI2BCDipnYlcC6DxAFvs="
+  alt="Skills Manager Preview"
+  style="width:100%; max-width:700px; display:block; margin:20px auto; border-radius:14px;"
+>
+  
+            <div class="project-content">
+
+              <p class="project-type">
+                LANDING PAGE
+              </p>
+
+              <h3>Business Landing Page</h3>
+
+              <p>
+                A clean business landing page designed to present
+                services and convert visitors into potential clients.
+              </p>
+
+              <div class="tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-links">
+
+                
+
+                <a href="https://github.com/a08886132-glitch/Business-landing-page-" target="_blank">
+                  GitHub ↗
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+
+            <div class="project-image project-three">
+              <span>03</span>
+            </div>
+            <img
+  src="https://img.magnific.com/free-vector/hand-drawn-time-management-concept_23-2148843889.jpg?semt=ais_hybrid&w=740&q=80 "
+  alt="Skills Manager Preview"
+  style="width:100%; max-width:700px; display:block; margin:20px auto; border-radius:14px;"
+>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                WEB APP
+              </p>
+
+              <h3>Skills Manager</h3>
+
+              <p>
+                A simple application for adding, editing, deleting
+                and filtering skills and tags.
+              </p>
+
+              <div class="tech">
+                <span>JavaScript</span>
+                <span>DOM</span>
+                <span>LocalStorage</span>
+              </div>
+
+              <div class="project-links">
+
+                
+
+                <a href="https://github.com/a08886132-glitch/Skills-manager-" target="_blank">
+                  GitHub ↗
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+          
+
+
+          <!-- PROJECT 4 -->
+          <article class="project-card">
+
+            <div class="project-image project-three">
+              <span>04</span>
+            </div>
+            <img
+  src="data:image/jpeg;base64,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  "
+  style="width:100%; max-width:700px; display:block; margin:20px auto; border-radius:14px;"
+>
+
+            <div class="project-content">
+
+              <p class="project-type">
+                WEB APP
+              </p>
+
+              <h3> Personal Portfolio website </h3>
+
+              <p>
+                 A responsive Portfolio website showcasing my projects ,technical skills , and contact information 
+              </p>
+
+              <div class="tech">
+                <span>JavaScript</span>
+                <span> HTML  </span>
+                <span> CSS </span>
+              </div>
+
+              <div class="project-links">
+
+                
+
+                <a href="https://github.com/a08886132-glitch/Skills-manager-" target="_blank">
+                  GitHub ↗
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+     
+
+    <!-- SERVICES -->
+    <section class="section light-section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>WHAT I OFFER</p>
+          <h2>My Services</h2>
+        </div>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <span>01</span>
+
+            <h3>Responsive Websites</h3>
+
+            <p>
+              Modern websites that look good on mobile,
+              tablet and desktop.
+            </p>
+          </div>
+
+
+          <div class="service-card">
+            <span>02</span>
+
+            <h3>Landing Pages</h3>
+
+            <p>
+              Clean landing pages designed to present
+              your business or product clearly.
+            </p>
+          </div>
+
+
+          <div class="service-card">
+            <span>03</span>
+
+            <h3>Interactive interfaces </h3>
+
+            <p>
+             Adding Interactive features and dynamic behavior using JavaScript and DOM manipulation 
+              
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+   <!-- CONTACT -->
+<section class="contact-section" id="contact">
+
+  <div class="container contact-content">
+
+    <p class="small-title">GET IN TOUCH</p>
+
+    <h2>Have a project in mind?</h2>
+
+    <p>
+      Let's create something clean, useful and professional.
+    </p>
+
+    <div class="contact-buttons">
+
+      <a
+        href="https://wa.me/201515474843"
+        target="_blank"
+        class="btn whatsapp-btn"
+      >
+        WhatsApp Me
+      </a>
+
+      <a
+        href="mailto:a08886132@gmail.com"
+        class="btn secondary-btn"
+      >
+        Send Email
+      </a>
+
+    </div>
+
+    <div class="social-links">
+
+      <a
+        href="https://wa.me/201515474843"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+      <a
+        href="mailto:a08886132@gmail.com"
+      >
+        Email
+      </a>
+
+      <a
+        href="#"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+    
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © 2026 Alaa Ahmed. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
